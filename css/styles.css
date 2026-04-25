@@ -180,3 +180,64 @@ body{
     outline: none;
     box-shadow: 0 0 0 2px rgba(245, 165, 181, 0.25);
 }
+
+.code-intro {
+    font-family: "Courier New", monospace;
+    background: rgba(10, 10, 15, 0.75);
+    border: 1px solid rgba(245, 165, 181, 0.5);
+    border-radius: 18px;
+    padding: 25px;
+    color: #f5e6e8;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    max-width: 550px;
+}
+
+.code-intro p {
+    margin: 8px 0;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 1.4s steps(40, end) forwards;
+}
+
+.code-intro p:nth-child(2) {
+    animation-delay: 1.4s;
+}
+
+.code-intro p:nth-child(3) {
+    animation-delay: 2.8s;
+}
+
+.code-intro p:nth-child(4) {
+    animation-delay: 4.2s;
+}
+
+.code-intro p:nth-child(5) {
+    animation-delay: 5.6s;
+}
+
+.keyword {
+    color: #ff8fab;
+}
+
+.string {
+    color: #ffd166;
+}
+
+.method {
+    color: #9d8cff;
+}
+
+.indent {
+    padding-left: 25px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
