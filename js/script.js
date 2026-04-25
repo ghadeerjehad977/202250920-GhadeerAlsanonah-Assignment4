@@ -1,15 +1,18 @@
-const greeting = document.getElementById("greeting");
+const greetingText = document.getElementById("greetingText");
 
-if (greeting) {
+if (greetingText) {
   const hour = new Date().getHours();
+  let message = "";
 
   if (hour < 12) {
-    greeting.textContent = "Good morning! 👋";
+    message = "Good morning 👋";
   } else if (hour < 18) {
-    greeting.textContent = "Good afternoon! 👋";
+    message = "Good afternoon 👋";
   } else {
-    greeting.textContent = "Good evening! 👋";
+    message = "Good evening 👋";
   }
+
+  greetingText.textContent = `"${message}"`;
 }
 
 const toggleBtn = document.getElementById("toggleProjectsBtn");
